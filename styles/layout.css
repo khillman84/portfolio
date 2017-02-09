@@ -78,7 +78,7 @@ label[for="nav-trigger"] {
   clear: left;
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 640px) {
   .navigation-two {
     display: inline-block;
     float: left;
