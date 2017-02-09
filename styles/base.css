@@ -1,0 +1,26 @@
+/*Base Rules are single element selectors that could include attribute selectors, pseudo-class selectors, child selectors or sibling selectors.*/
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  float: left;
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+}
+
+@media only screen and (min-width: 320px) {
+  h1 {
+    float: right;
+  }
+
+  input {
+    display: none;
+  }
+
+  label {
+    display: none;
+  }
+}
