@@ -25,10 +25,14 @@
         <li class="nav-item-two">About</li>
       </ul>
       <h1>Kyle Hillman Portfolio</h1>
-      <section class="projects">
-        <img />
-        <img />
-        <img />
+      <!-- Display projects template -->
+      <section id="projects" class="projects">
+        <summary class="template">
+          <img />
+          <address><a href="">Project Name</a></address>
+          <time>Date published</time>
+          <div class="project-description">Project Description</div>
+        </summary>
       </section>
       <div class="skills">
         <h2>Skills</h2>
@@ -50,15 +54,17 @@
         <img />
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
+      <footer>
+        <p>Copyright Kyle Hillman</p>
+        <p><a href="https://www.facebook.com/">Facebook</a></p>
+        <p><a href="https://twitter.com/">Twitter</a></p>
+        <p><a href="https://github.com/khillman84">Github</a></p>
+      </footer>
     </main>
-    <footer>
-      <p>Copyright Kyle Hillman</p>
-      <p>Facebook Link</p>
-      <p>Twitter Link</p>
-      <p>Github Link</p>
-    </footer>
+
     <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
-    <script src="scripts/info.js"></script>
-    <script src="scripts/app.js"></script>
+    <script src="scripts/projectData.js"></script>
+    <script src="scripts/projects.js"></script>
+    
   </body>
 </html>
