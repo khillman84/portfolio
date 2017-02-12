@@ -14,7 +14,7 @@ Projects.prototype.toHtml = function() {
   var $newProject = $('summary.template').clone().removeClass('template');
 
   $newProject.find('address').text('this.name');
-  $newProject.find('img').attr('href', this.image);
+  $newProject.find('img').attr('src', this.image);
   $newProject.find('.project-description').text('cat.description');
   $newProject.find('time').text('cat.date');
   $newProject.find('.projects a').attr('href', this.link);
