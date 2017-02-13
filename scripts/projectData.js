@@ -2,7 +2,7 @@
 
 var projectData = [
   {
-    name:         'Project 1',
+    name:         'Project 1', 
     image:        'img/photo-one.png',
     description:  'Project 1',
     date:         '1 Jan 17',
