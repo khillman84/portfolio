@@ -1,3 +1,17 @@
 .template {
   display: none;
 }
+
+footer a img {
+  float:right;
+  height: 25px;
+  width: 25px;
+}
+
+footer p {
+  float: left;
+}
+
+.nav-item {
+  font-family: 'Open Sans', sans-serif;
+}

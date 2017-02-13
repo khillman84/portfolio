@@ -14,10 +14,6 @@
   z-index: 0;
 }
 
-.navigation-two {
-  display: none;
-}
-
 .nav-item {
   width: 200px;
   border-top: 1px solid #111;
@@ -34,7 +30,6 @@
   bottom: 100%;
   left: 0;
   z-index: 1;
-  /*padding: 4em;*/
   background-image: rgb(255, 255, 240);
   background-size: 200%;
 }
@@ -70,7 +65,7 @@ label[for="nav-trigger"] {
 }
 
 .projects {
-  height: 450px;
+  min-height: 150px;
   clear: left;
 }
 
@@ -89,6 +84,7 @@ label[for="nav-trigger"] {
     display: inline-block;
     width: 24%;
     height: 3%;
+    top: 2%;
     background-color: transparent;
     z-index: 1;
   }
@@ -97,6 +93,8 @@ label[for="nav-trigger"] {
     position:relative;
     display: inline;
     list-style: none;
+    border-top: none;
+    border-bottom: none;
     color: black;
     z-index: 1;
   }
