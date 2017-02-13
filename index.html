@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="styles/modules.css" />
     <link rel="stylesheet" href="styles/fonts.css" />
     <link rel="stylesheet" href="styles/reset.css" />
+    <script id="project-template" type="text/x-handlebars-template">
+      <summary>
+        <img src="{{image}}"/>
+        <h3><a href="{{link}}">{{name}}</a></h3>
+        <time>{{date}}</time>
+        <div>{{description}}</div>
+      </summary>
+    </script>
   </head>
   <body>
     <nav class="navigation">
@@ -24,12 +32,12 @@
       <h1>Kyle Hillman Portfolio</h1>
       <!-- Display projects template -->
       <section id="projects" class="projects tab-content">
-        <summary class="template">
+        <!-- <summary class="template">
           <img />
           <h3><a href="">Project Name</a></h3>
           <time>Date published</time>
           <div class="project-description">Project Description</div>
-        </summary>
+        </summary> -->
       </section>
       <section id="skills" class="tab-content">
         <h2>Skills</h2>
@@ -58,8 +66,8 @@
         <p><a href="https://github.com/khillman84">Github</a></p>
       </footer>
     </main>
-
-    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script src="scripts/projectData.js"></script>
     <script src="scripts/projects.js"></script>
     <script src="scripts/tabView.js"></script>
