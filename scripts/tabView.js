@@ -1,6 +1,6 @@
 'use strict'
 
-var tabView = {};
+const tabView = {};
 
 tabView.handleNav = function() {
   $('.navigation').on('click', '.tab', function() {
@@ -10,4 +10,9 @@ tabView.handleNav = function() {
   $('.navigation .tab:first').click();
 };
 
-tabView.handleNav();
+tabView.initIndexPage = function() {
+  Projects.all.forEach(function(a){
+    $('#projects').append(a.toHtml())
+  });
+  tabView.handleNav();
+};
