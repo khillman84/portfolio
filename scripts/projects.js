@@ -37,7 +37,3 @@ Projects.getInfo = function() {
     });
   }
 }
-
-// allProjects.forEach(function(a){
-//   $('#projects').append(a.toHtml());
-// });
