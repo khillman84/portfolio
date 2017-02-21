@@ -22,7 +22,7 @@
     Projects.all = projectData.map(function(ele){
       return new Projects(ele);
     });
-  };
+  };  
 
   //Check to see if JSON file has been loaded in local storage.  If not, then retrieve it and store it.
   Projects.getInfo = function() {
