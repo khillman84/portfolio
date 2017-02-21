@@ -1,5 +1,5 @@
+'use strict';
 (function(module){
-  'use strict'
 
   function Projects(cat) {
     this.name = cat.name;
@@ -12,20 +12,20 @@
   Projects.all = [];
 
   //Use Handlebars to compile the project information into the html template
-  Projects.prototype.toHtml = () => {
+  Projects.prototype.toHtml = function() {
     let templateRender = Handlebars.compile($('#project-template').text());
     return templateRender(this);
   };
 
   //Takes the project data and makes them new Project objects that are stored in Projects.all
-  Projects.loadInfo = projectData => {
+  Projects.loadInfo = function(projectData) {
     Projects.all = projectData.map(function(ele){
       return new Projects(ele);
     });
   };
 
   //Check to see if JSON file has been loaded in local storage.  If not, then retrieve it and store it.
-  Projects.getInfo = () => {
+  Projects.getInfo = function() {
     if (localStorage.projectData) {
       console.log('fetched data from local storage');
       Projects.loadInfo(JSON.parse(localStorage.getItem('projectData')));
