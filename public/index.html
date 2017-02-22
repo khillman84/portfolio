@@ -22,9 +22,9 @@
   <body>
     <nav class="navigation">
       <ul>
-        <li class="nav-item tab" data-content="skills">Home</li>
-        <li class="nav-item tab" data-content="projects">Projects</li>
-        <li class="nav-item tab" data-content="about">About</li>
+        <li class="nav-item tab" data-content="skills"><a href="/">Home</a></li>
+        <li class="nav-item tab" data-content="projects"><a href="/project">Projects</a></li>
+        <li class="nav-item tab" data-content="about"><a href="/about">About</a></li>
       </ul>
     </nav>
       <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -62,8 +62,12 @@
     </main>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
-    <script src="scripts/projects.js"></script>
-    <script src="scripts/tabView.js"></script>
-    <script>Projects.getInfo();</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/page.js/1.7.1/page.js"></script>
+    <script src="scripts/model/projects.js"></script>
+    <script src="scripts/view/tabView.js"></script>
+    <script src="scripts/controller/aboutController.js"></script>
+    <script src="scripts/controller/homeController.js"></script>
+    <script src="scripts/controller/projectController.js"></script>
+    <script src="scripts/controller/routes.js"></script>
   </body>
 </html>
