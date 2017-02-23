@@ -18,6 +18,18 @@
         <div>{{description}}</div>
       </summary>
     </script>
+    <script id="repo-template" type="text/x-handlebars-template">
+      <li>
+        <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
+        <p>Description: {{description}}</p>
+        <p>Language: {{language}}</p>
+        <p>Created: {{created_at}}</p>
+        <p>Last updated: {{updated_at}}</p>
+        {{#if watchers_count}}
+          <p>{{watchers_count}} watching this repo</p>
+        {{/if}}
+      </li>
+    </script>
   </head>
   <body>
     <nav class="navigation">
@@ -25,6 +37,7 @@
         <li class="nav-item tab" data-content="skills"><a href="/">Home</a></li>
         <li class="nav-item tab" data-content="projects"><a href="/project">Projects</a></li>
         <li class="nav-item tab" data-content="about"><a href="/about">About</a></li>
+        <li class="nav-item tab" data-content="git"><a href="/git">GitHub</a></li>
       </ul>
     </nav>
       <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -53,6 +66,9 @@
         <img src="img/photo-four.png"/>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </article>
+      <section id="git" class="tab-content">
+
+      </section>
       <footer>
         <p>Copyright Kyle Hillman</p>
         <a href="https://www.facebook.com/"><img src="img/fb.svg" /></a>
@@ -64,10 +80,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/page.js/1.7.1/page.js"></script>
     <script src="scripts/model/projects.js"></script>
+    <script src="scripts/model/repo.js"></script>
     <script src="scripts/view/tabView.js"></script>
+    <script src="scripts/view/repoView.js"></script>
     <script src="scripts/controller/aboutController.js"></script>
     <script src="scripts/controller/homeController.js"></script>
     <script src="scripts/controller/projectController.js"></script>
+    <script src="scripts/controller/gitController.js"></script>
     <script src="scripts/controller/routes.js"></script>
   </body>
 </html>

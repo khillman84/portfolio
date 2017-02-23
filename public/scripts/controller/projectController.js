@@ -6,7 +6,7 @@
     Projects.getInfo(tabView.initIndexPage);
 
     $('#projects').show();
-    $('#skills').hide();
+    $('#skills').hide(); 
     $('#about').hide();
   }
 
