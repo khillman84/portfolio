@@ -13,7 +13,7 @@
   const render = Handlebars.compile($('#repo-template').text());
 
   repoView.index = function() {
-    // ui();
+    ui();
 
     $('#git ul').append(
       repos.with('name').map(render)
