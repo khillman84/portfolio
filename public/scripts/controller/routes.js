@@ -3,5 +3,6 @@
 page('/', homeController.index);
 page('/project', projectController.index);
 page('/about', aboutController.index);
+page('/git', gitController.index);
 
 page();
